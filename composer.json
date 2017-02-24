@@ -1,0 +1,19 @@
+{
+    "name": "hanscode44/auto-deploy",
+    "description": "Automatically deploy the code using PHP and Git",
+    "type": "project",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.8.35"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hans Loos",
+            "email": "hansloos.g1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
