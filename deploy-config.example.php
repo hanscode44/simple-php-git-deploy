@@ -65,11 +65,16 @@ define('DELETE_FILES', false);
  * code base, for example user uploads or server-specific configuration files.
  * Use rsync exclude pattern syntax for each element.
  *
- * @var serialized array of strings
+ * @var array of strings
  */
-define('EXCLUDE', serialize(array(
-	'.git',
-)));
+define(
+    'EXCLUDE',
+    serialize(
+        array(
+            '.git',
+        )
+    )
+);
 
 /**
  * Temporary directory we'll use to stage the code before the update. If it
@@ -79,7 +84,7 @@ define('EXCLUDE', serialize(array(
  *
  * @var string Full path including the trailing slash
  */
-define('TMP_DIR', '/tmp/spgd-'.md5(REMOTE_REPOSITORY).'/');
+define('TMP_DIR', '/tmp/spgd-' . md5(REMOTE_REPOSITORY) . '/');
 
 /**
  * Whether to remove the TMP_DIR after the deployment.
@@ -93,7 +98,7 @@ define('CLEAN_UP', true);
  *
  * @var string Full path to the file name
  */
-define('VERSION_FILE', TMP_DIR.'VERSION');
+define('VERSION_FILE', TMP_DIR . 'VERSION');
 
 /**
  * Time limit for each command.
